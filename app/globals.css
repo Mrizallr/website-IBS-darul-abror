@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary — Deep Navy */
+    --primary: 214 78% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary — Royal Blue */
+    --secondary: 214 90% 37%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Accent — Gold/Orange */
+    --accent: 42 92% 54%;
+    --accent-foreground: 214 78% 12%;
+
+    /* Surfaces */
+    --background: 210 40% 98%;
+    --foreground: 214 55% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 214 55% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 55% 12%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 214 16% 40%;
+
+    --destructive: 0 72% 48%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 214 90% 37%;
+
+    --radius: 0.75rem;
+
+    --chart-1: 214 78% 20%;
+    --chart-2: 42 92% 54%;
+    --chart-3: 214 60% 50%;
+    --chart-4: 214 45% 65%;
+    --chart-5: 214 30% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  ::selection {
+    background: #168BEA33;
+    color: #082B5C;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display), Georgia, serif;
+  }
+  .font-sans {
+    font-family: var(--font-sans), system-ui, sans-serif;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Brand gradient — hero, VT section, footer */
+  .bg-brand-gradient {
+    background: linear-gradient(135deg, #082B5C 0%, #0759B8 55%, #168BEA 100%);
+  }
+
+  /* Subtle light-blue section background */
+  .bg-light-blue {
+    background: linear-gradient(135deg, #EAF6FF 0%, #FFFFFF 100%);
+  }
+
+  /* Islamic geometric pattern — blue tint */
+  .pattern-islamic {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%230759B8' stroke-opacity='0.06' stroke-width='1'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3Cpath d='M30 10L50 30L30 50L10 30Z'/%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .glass-nav {
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+
+  /* Shadows */
+  .shadow-soft {
+    box-shadow: 0 1px 3px rgba(8,43,92,0.06), 0 8px 24px rgba(8,43,92,0.08);
+  }
+  .shadow-card {
+    box-shadow: 0 2px 8px rgba(8,43,92,0.06), 0 16px 40px rgba(8,43,92,0.10);
+  }
+  .shadow-lift {
+    box-shadow: 0 4px 12px rgba(8,43,92,0.08), 0 28px 56px rgba(8,43,92,0.14);
+  }
+  .shadow-gold {
+    box-shadow: 0 4px 20px rgba(245,181,27,0.35);
+  }
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #EAF6FF; }
+::-webkit-scrollbar-thumb {
+  background: #0759B840;
+  border-radius: 999px;
+  border: 2px solid #EAF6FF;
+}
+::-webkit-scrollbar-thumb:hover { background: #0759B8; }
