@@ -51,10 +51,9 @@ export const tourLocations: TourLocation[] = [
   },
   {
     id: 'asrama-putri',
-    name: 'Asrama Putri',
+    name: 'Asrama Akhwat Lt.2',
     category: 'Asrama',
-    thumbnail:
-      'https://images.pexels.com/photos/4907212/pexels-photo-4907212.jpeg?auto=compress&cs=tinysrgb&w=800',
+    thumbnail: '/assets/images/AsramaAkhwat.webp',
     description: 'Asrama santri putri dengan pengawasan penuh.',
   },
   {
@@ -77,8 +76,7 @@ export const tourLocations: TourLocation[] = [
     id: 'aula',
     name: 'Aula',
     category: 'Umum',
-    thumbnail:
-      'https://images.pexels.com/photos/31584584/pexels-photo-31584584.jpeg?auto=compress&cs=tinysrgb&w=800',
+    thumbnail: '/assets/images/GorSerbaguna.webp',
     description: 'Aula serbaguna untuk acara dan kegiatan besar.',
   },
   {
@@ -151,10 +149,9 @@ export const facilities: Facility[] = [
   },
   {
     id: 'asrama-putri',
-    name: 'Asrama Putri',
+    name: 'Asrama Akhwat Lt.2',
     category: 'Asrama',
-    image:
-      'https://images.pexels.com/photos/4907212/pexels-photo-4907212.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/AsramaAkhwat.webp',
     description:
       'Asrama santri putri dengan pengawasan penuh dan fasilitas yang memadai.',
     location: 'Blok timur kompleks',
@@ -165,8 +162,7 @@ export const facilities: Facility[] = [
     id: 'smpit',
     name: 'SMPIT',
     category: 'Pendidikan',
-    image:
-      'https://images.pexels.com/photos/37758607/pexels-photo-37758607.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/DepanSMPIT.webp',
     description:
       'Sekolah Menengah Pertama Terpadu Islam dengan kurikulum nasional dan agama.',
     location: 'Gedung pendidikan lantai 1',
@@ -213,8 +209,7 @@ export const facilities: Facility[] = [
     id: 'aula',
     name: 'Aula',
     category: 'Umum',
-    image:
-      'https://images.pexels.com/photos/31584584/pexels-photo-31584584.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/GorSerbaguna.webp',
     description:
       'Aula serbaguna untuk acara besar, pertemuan, dan kegiatan santri.',
     location: 'Gedung pusat kompleks',
