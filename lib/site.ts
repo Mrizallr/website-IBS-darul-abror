@@ -146,9 +146,7 @@ export const facilities: Facility[] = [
   },
   {
     id: 'asrama-putri',
-    name: 'Asrama Akhwat Lt.2',
-    category: 'Asrama',
-    image: '/assets/images/AsramaAkhwat.webp',
+    name: 'Asrama Putri',
     description:
       'Asrama santri putri dengan pengawasan penuh dan fasilitas yang memadai.',
     location: 'Blok timur kompleks',
@@ -198,18 +196,6 @@ export const facilities: Facility[] = [
     location: 'Gedung pusat kompleks',
     inTour: true,
     icon: 'Presentation',
-  },
-  {
-    id: 'lapangan',
-    name: 'Lapangan',
-    category: 'Umum',
-    image:
-      'https://images.pexels.com/photos/37478244/pexels-photo-37478244.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description:
-      'Lapangan olahraga dan upacara dengan rumput hijau yang terawat.',
-    location: 'Area terbuka pusat kompleks',
-    inTour: true,
-    icon: 'Trees',
   },
   {
     id: 'kantin',
