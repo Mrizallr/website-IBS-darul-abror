@@ -170,8 +170,7 @@ export const facilities: Facility[] = [
     id: 'smait',
     name: 'SMAIT',
     category: 'Pendidikan',
-    image:
-      'https://images.pexels.com/photos/37812834/pexels-photo-37812834.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/DepanSMAIT.webp',
     description:
       'Sekolah Menengah Atas Terpadu Islam yang mempersiapkan santri menuju perguruan tinggi.',
     location: 'Gedung pendidikan lantai 2',
@@ -412,6 +411,41 @@ export const galleryItems: GalleryItem[] = [
     src: '/assets/images/pnd2.webp',
     alt: 'Kegiatan santri Darul Abror',
     category: 'Kegiatan',
+    span: 'normal',
+  },
+  {
+    id: 'g14',
+    src: '/assets/images/HalamanAsramaAkhwat.webp',
+    alt: 'Halaman Asrama Akhwat Darul Abror',
+    category: 'Lingkungan',
+    span: 'normal',
+  },
+  {
+    id: 'g15',
+    src: '/assets/images/HalamanKantor.webp',
+    alt: 'Halaman Depan Kantor Darul Abror',
+    category: 'Lingkungan',
+    span: 'normal',
+  },
+  {
+    id: 'g16',
+    src: '/assets/images/HalamanMasjid.webp',
+    alt: 'Halaman Depan Masjid Darul Abror',
+    category: 'Lingkungan',
+    span: 'wide',
+  },
+  {
+    id: 'g17',
+    src: '/assets/images/HalamanSMPIT.webp',
+    alt: 'Halaman Depan SMPIT Darul Abror',
+    category: 'Lingkungan',
+    span: 'normal',
+  },
+  {
+    id: 'g18',
+    src: '/assets/images/HalamanKantin.webp',
+    alt: 'Halaman Kantin Darul Abror',
+    category: 'Lingkungan',
     span: 'normal',
   },
 ];
