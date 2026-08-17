@@ -38,8 +38,7 @@ export const tourLocations: TourLocation[] = [
     id: 'masjid',
     name: 'Masjid',
     category: 'Ibadah',
-    thumbnail:
-      'https://images.pexels.com/photos/11122257/pexels-photo-11122257.jpeg?auto=compress&cs=tinysrgb&w=800',
+    thumbnail: '/assets/images/Masjid.webp',
     description: 'Pusat ibadah dan kegiatan keagamaan santri.',
   },
   {
@@ -110,8 +109,7 @@ export const tourLocations: TourLocation[] = [
     id: 'kantin',
     name: 'Kantin',
     category: 'Umum',
-    thumbnail:
-      'https://images.pexels.com/photos/36159723/pexels-photo-36159723.jpeg?auto=compress&cs=tinysrgb&w=800',
+    thumbnail: '/assets/images/Kantin.webp',
     description: 'Kantin sehat dengan menu harian bergizi.',
   },
 ];
@@ -132,8 +130,7 @@ export const facilities: Facility[] = [
     id: 'masjid',
     name: 'Masjid',
     category: 'Ibadah',
-    image:
-      'https://images.pexels.com/photos/11122257/pexels-photo-11122257.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/Masjid.webp',
     description:
       'Pusat ibadah dan kegiatan keagamaan santri, dengan kapasitas jamaah yang luas.',
     location: 'Pusat kompleks pesantren',
@@ -240,8 +237,7 @@ export const facilities: Facility[] = [
     id: 'kantin',
     name: 'Kantin',
     category: 'Umum',
-    image:
-      'https://images.pexels.com/photos/36159723/pexels-photo-36159723.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/Kantin.webp',
     description:
       'Kantin sehat dengan menu harian bergizi dan standar kebersihan tinggi.',
     location: 'Area makan pusat kompleks',
@@ -272,6 +268,17 @@ export const facilities: Facility[] = [
     inTour: false,
     icon: 'CookingPot',
   },
+  {
+    id: 'ruang-tunggu',
+    name: 'Ruang Tunggu Orang Tua',
+    category: 'Umum',
+    image: '/assets/images/RTungguOrtu.webp',
+    description:
+      'Ruang tunggu nyaman bagi orang tua santri saat berkunjung ke pesantren.',
+    location: 'Gedung penerimaan tamu',
+    inTour: false,
+    icon: 'Sofa',
+  },
 ];
 
 export type EducationProgram = {
@@ -291,8 +298,7 @@ export const educationPrograms: EducationProgram[] = [
     id: 'smpit',
     name: 'SMPIT Darul Abror',
     level: 'Sekolah Menengah Pertama Terpadu Islam',
-    image:
-      'https://images.pexels.com/photos/37758607/pexels-photo-37758607.jpeg?auto=compress&cs=tinysrgb&w=1000',
+    image: '/assets/images/DepanSMPIT.webp',
     tagline: 'Membentuk fondasi akademik dan akhlak santri muda',
     description:
       'Program SMP Terpadu Islam Darul Abror memadukan kurikulum nasional dengan pendidikan agama Islam yang intensif. Santri belajar dalam lingkungan yang Islami, dengan pendekatan pembelajaran modern yang menumbuhkan rasa ingin tahu dan akhlak mulia.',
@@ -313,8 +319,7 @@ export const educationPrograms: EducationProgram[] = [
     id: 'smait',
     name: 'SMAIT Darul Abror',
     level: 'Sekolah Menengah Atas Terpadu Islam',
-    image:
-      'https://images.pexels.com/photos/37812834/pexels-photo-37812834.jpeg?auto=compress&cs=tinysrgb&w=1000',
+    image: '/assets/images/DepanSMAIT.webp',
     tagline: 'Mempersiapkan santri menuju perguruan tinggi dan kepemimpinan',
     description:
       'Program SMA Terpadu Islam Darul Abror dirancang untuk mempersiapkan santri menuju perguruan tinggi unggulan. Dengan fokus pada akademik, kepemimpinan, dan kedalaman agama, santri dilatih menjadi generasi yang siap berkontribusi bagi umat dan bangsa.',
@@ -344,86 +349,86 @@ export type GalleryItem = {
 export const galleryItems: GalleryItem[] = [
   {
     id: 'g1',
-    src: 'https://images.pexels.com/photos/11122257/pexels-photo-11122257.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Masjid Darul Abror di pagi hari',
+    src: '/assets/images/Masjid.webp',
+    alt: 'Masjid Pondok Pesantren Darul Abror',
     category: 'Fasilitas',
     span: 'wide',
   },
   {
     id: 'g2',
-    src: 'https://images.pexels.com/photos/36463780/pexels-photo-36463780.jpeg?auto=compress&cs=tinysrgb&w=800',
+    src: 'https://images.pexels.com/photos/8923461/pexels-photo-8923461.jpeg?auto=compress&cs=tinysrgb&w=800',
     alt: 'Santri belajar mengaji bersama',
     category: 'Kegiatan',
     span: 'tall',
   },
   {
     id: 'g3',
-    src: 'https://images.pexels.com/photos/31690905/pexels-photo-31690905.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Lapangan olahraga pesantren',
-    category: 'Lingkungan',
+    src: 'https://images.pexels.com/photos/8923548/pexels-photo-8923548.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Kegiatan santri di kelas',
+    category: 'Pendidikan',
     span: 'normal',
   },
   {
     id: 'g4',
-    src: 'https://images.pexels.com/photos/8926894/pexels-photo-8926894.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Santri di perpustakaan',
-    category: 'Pendidikan',
-    span: 'normal',
-  },
-  {
-    id: 'g5',
-    src: 'https://images.pexels.com/photos/28141968/pexels-photo-28141968.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Interior masjid pesantren',
-    category: 'Fasilitas',
-    span: 'wide',
-  },
-  {
-    id: 'g6',
-    src: 'https://images.pexels.com/photos/37758607/pexels-photo-37758607.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Kelas SMPIT Darul Abror',
-    category: 'Pendidikan',
-    span: 'normal',
-  },
-  {
-    id: 'g7',
-    src: 'https://images.pexels.com/photos/36493690/pexels-photo-36493690.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Diskusi santri di luar masjid',
-    category: 'Kegiatan',
-    span: 'normal',
-  },
-  {
-    id: 'g8',
-    src: 'https://images.pexels.com/photos/5137980/pexels-photo-5137980.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Asrama santri putra',
-    category: 'Fasilitas',
-    span: 'tall',
-  },
-  {
-    id: 'g9',
-    src: 'https://images.pexels.com/photos/33750570/pexels-photo-33750570.jpeg?auto=compress&cs=tinysrgb&w=800',
+    src: 'https://images.pexels.com/photos/8923438/pexels-photo-8923438.jpeg?auto=compress&cs=tinysrgb&w=800',
     alt: 'Santri membaca Al-Qur\'an',
     category: 'Kegiatan',
     span: 'normal',
   },
   {
+    id: 'g5',
+    src: '/assets/images/DepanSMPIT.webp',
+    alt: 'Halaman Depan SMPIT Darul Abror',
+    category: 'Pendidikan',
+    span: 'wide',
+  },
+  {
+    id: 'g6',
+    src: '/assets/images/DepanSMAIT.webp',
+    alt: 'Halaman Depan SMAIT Darul Abror',
+    category: 'Pendidikan',
+    span: 'normal',
+  },
+  {
+    id: 'g7',
+    src: 'https://images.pexels.com/photos/8923545/pexels-photo-8923545.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Santri berdiskusi kelompok',
+    category: 'Kegiatan',
+    span: 'normal',
+  },
+  {
+    id: 'g8',
+    src: 'https://images.pexels.com/photos/8923442/pexels-photo-8923442.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Kegiatan olahraga santri',
+    category: 'Kegiatan',
+    span: 'tall',
+  },
+  {
+    id: 'g9',
+    src: 'https://images.pexels.com/photos/8923556/pexels-photo-8923556.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Santri belajar di perpustakaan',
+    category: 'Pendidikan',
+    span: 'normal',
+  },
+  {
     id: 'g10',
-    src: 'https://images.pexels.com/photos/19393166/pexels-photo-19393166.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Laboratorium IPA pesantren',
-    category: 'Fasilitas',
+    src: 'https://images.pexels.com/photos/8923464/pexels-photo-8923464.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Kegiatan upacara santri',
+    category: 'Kegiatan',
     span: 'normal',
   },
   {
     id: 'g11',
-    src: 'https://images.pexels.com/photos/32989914/pexels-photo-32989914.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Lingkungan hijau pesantren',
+    src: 'https://images.pexels.com/photos/8923553/pexels-photo-8923553.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Suasana lingkungan pesantren',
     category: 'Lingkungan',
     span: 'wide',
   },
   {
     id: 'g12',
-    src: 'https://images.pexels.com/photos/37812834/pexels-photo-37812834.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Kelas SMAIT Darul Abror',
-    category: 'Pendidikan',
+    src: 'https://images.pexels.com/photos/8923451/pexels-photo-8923451.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Santri kegiatan ekstrakurikuler',
+    category: 'Kegiatan',
     span: 'normal',
   },
 ];
@@ -431,8 +436,8 @@ export const galleryItems: GalleryItem[] = [
 export const stats = [
   { value: 11, label: 'Kelas SMPIT', suffix: '' },
   { value: 4, label: 'Kelas SMAIT', suffix: '' },
-  { value: 12, label: 'Asrama Putra & Putri', suffix: '' },
-  { value: 360, label: 'Pengalaman Virtual Tour', suffix: '°' },
+  { value: 6, label: 'Asrama Putra', suffix: '' },
+  { value: 5, label: 'Asrama Putri', suffix: '' },
 ];
 
 export const navItems = [
