@@ -45,8 +45,7 @@ export const tourLocations: TourLocation[] = [
     id: 'asrama-putra',
     name: 'Asrama Putra',
     category: 'Asrama',
-    thumbnail:
-      'https://images.pexels.com/photos/5137980/pexels-photo-5137980.jpeg?auto=compress&cs=tinysrgb&w=800',
+    thumbnail: '/assets/images/AsramaPutra.webp',
     description: 'Tempat tinggal santri putra yang nyaman dan aman.',
   },
   {
@@ -91,8 +90,7 @@ export const tourLocations: TourLocation[] = [
     id: 'perpustakaan',
     name: 'Perpustakaan',
     category: 'Pendidikan',
-    thumbnail:
-      'https://images.pexels.com/photos/8926894/pexels-photo-8926894.jpeg?auto=compress&cs=tinysrgb&w=800',
+    thumbnail: '/assets/images/Perpustakaan.webp',
     description: 'Perpustakaan dengan koleksi buku Islami dan umum.',
   },
   {
@@ -139,8 +137,7 @@ export const facilities: Facility[] = [
     id: 'asrama-putra',
     name: 'Asrama Putra',
     category: 'Asrama',
-    image:
-      'https://images.pexels.com/photos/5137980/pexels-photo-5137980.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/AsramaPutra.webp',
     description:
       'Asrama santri putra dengan lingkungan yang nyaman, aman, dan terawat.',
     location: 'Blok barat kompleks',
@@ -182,23 +179,10 @@ export const facilities: Facility[] = [
     icon: 'School',
   },
   {
-    id: 'laboratorium',
-    name: 'Laboratorium',
-    category: 'Pendidikan',
-    image:
-      'https://images.pexels.com/photos/19393166/pexels-photo-19393166.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description:
-      'Laboratorium IPA lengkap dengan peralatan modern untuk praktikum sains.',
-    location: 'Gedung pendidikan sayap kiri',
-    inTour: true,
-    icon: 'FlaskConical',
-  },
-  {
     id: 'perpustakaan',
     name: 'Perpustakaan',
     category: 'Pendidikan',
-    image:
-      'https://images.pexels.com/photos/8926894/pexels-photo-8926894.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/images/Perpustakaan.webp',
     description:
       'Perpustakaan dengan koleksi buku Islami dan umum, ruang baca yang tenang.',
     location: 'Gedung pendidikan sayap kanan',
@@ -240,28 +224,15 @@ export const facilities: Facility[] = [
     icon: 'UtensilsCrossed',
   },
   {
-    id: 'laundry',
-    name: 'Laundry',
-    category: 'Umum',
-    image:
-      'https://images.pexels.com/photos/4700400/pexels-photo-4700400.jpeg?auto=compress&cs=tinysrgb&w=800',
+    id: 'lab-komputer',
+    name: 'Laboratorium Komputer',
+    category: 'Pendidikan',
+    image: '/assets/images/LabKomputer.webp',
     description:
-      'Layanan laundry santri dengan mesin cuci modern dan terjadwal.',
-    location: 'Gedung utilitas kompleks',
+      'Laboratorium komputer dengan perangkat modern untuk menunjang pembelajaran teknologi santri.',
+    location: 'Gedung pendidikan sayap kiri',
     inTour: false,
-    icon: 'WashingMachine',
-  },
-  {
-    id: 'dapur',
-    name: 'Dapur',
-    category: 'Umum',
-    image:
-      'https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description:
-      'Dapur bersih dengan standar higienitas untuk memasak menu santri harian.',
-    location: 'Gedung utilitas kompleks',
-    inTour: false,
-    icon: 'CookingPot',
+    icon: 'Monitor',
   },
   {
     id: 'ruang-tunggu',
@@ -351,8 +322,8 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: 'g2',
-    src: 'https://images.pexels.com/photos/8923461/pexels-photo-8923461.jpeg?auto=compress&cs=tinysrgb&w=800',
-    alt: 'Santri belajar mengaji bersama',
+    src: '/assets/images/KegiatanTadarus.webp',
+    alt: 'Kegiatan Tadarus santri Darul Abror',
     category: 'Kegiatan',
     span: 'tall',
   },
@@ -423,6 +394,27 @@ export const galleryItems: GalleryItem[] = [
     id: 'g12',
     src: 'https://images.pexels.com/photos/8923451/pexels-photo-8923451.jpeg?auto=compress&cs=tinysrgb&w=800',
     alt: 'Santri kegiatan ekstrakurikuler',
+    category: 'Kegiatan',
+    span: 'normal',
+  },
+  {
+    id: 'g13',
+    src: '/assets/images/KegiatanDzuhur.webp',
+    alt: 'Kegiatan Kajian Dzuhur santri',
+    category: 'Kegiatan',
+    span: 'normal',
+  },
+  {
+    id: 'g14',
+    src: '/assets/images/Kegiatan2.webp',
+    alt: 'Kegiatan santri Darul Abror',
+    category: 'Kegiatan',
+    span: 'normal',
+  },
+  {
+    id: 'g15',
+    src: '/assets/images/Kegiatan3.webp',
+    alt: 'Kegiatan santri Darul Abror',
     category: 'Kegiatan',
     span: 'normal',
   },
