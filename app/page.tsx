@@ -260,7 +260,7 @@ export default function HomePage() {
             </div>
           </Reveal>
           <Reveal delay={120} className="mt-12">
-            <GalleryGrid items={galleryItems.slice(0, 6)} />
+            <GalleryGrid items={galleryItems} />
           </Reveal>
         </div>
       </section>

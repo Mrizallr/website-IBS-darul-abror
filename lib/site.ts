@@ -134,6 +134,17 @@ export const facilities: Facility[] = [
     icon: 'Dome',
   },
   {
+    id: 'mushola-akhwat',
+    name: 'Mushola Akhwat',
+    category: 'Ibadah',
+    image: '/assets/images/MUSHOLA AKWAT FIX BANGETT.jpg',
+    description:
+      'Fasilitas ibadah khusus santri akhwat untuk menunjang salat berjamaah dan kegiatan keagamaan.',
+    location: 'Area asrama akhwat',
+    inTour: false,
+    icon: 'Dome',
+  },
+  {
     id: 'asrama-putra',
     name: 'Asrama Putra',
     category: 'Asrama',
@@ -314,6 +325,13 @@ export const galleryItems: GalleryItem[] = [
     alt: 'Masjid Pondok Pesantren Darul Abror',
     category: 'Fasilitas',
     span: 'wide',
+  },
+  {
+    id: 'g19',
+    src: '/assets/images/MUSHOLA AKWAT FIX BANGETT.jpg',
+    alt: 'Mushola Akhwat Pondok Pesantren Darul Abror',
+    category: 'Fasilitas',
+    span: 'normal',
   },
   {
     id: 'g2',
