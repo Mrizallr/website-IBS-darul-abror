@@ -137,7 +137,7 @@ export const facilities: Facility[] = [
     id: 'mushola-akhwat',
     name: 'Mushola Akhwat',
     category: 'Ibadah',
-    image: '/assets/images/MUSHOLA AKWAT FIX BANGETT.jpg',
+    image: '/assets/images/MusholaAkhwat.webp',
     description:
       'Fasilitas ibadah khusus santri akhwat untuk menunjang salat berjamaah dan kegiatan keagamaan.',
     location: 'Area asrama akhwat',
@@ -330,7 +330,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: 'g19',
-    src: '/assets/images/MUSHOLA AKWAT FIX BANGETT.jpg',
+    src: '/assets/images/MusholaAkhwat.webp',
     alt: 'Mushola Akhwat Pondok Pesantren Darul Abror',
     category: 'Fasilitas',
     span: 'normal',
@@ -457,6 +457,7 @@ export const galleryItems: GalleryItem[] = [
 ];
 
 export const stats = [
+  { value: 245, label: 'Total Santri', suffix: '' },
   { value: 11, label: 'Kelas SMPIT', suffix: '' },
   { value: 4, label: 'Kelas SMAIT', suffix: '' },
   { value: 6, label: 'Asrama Putra', suffix: '' },

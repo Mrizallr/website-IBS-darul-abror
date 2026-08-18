@@ -165,7 +165,7 @@ export default function HomePage() {
       {/* SECTION 4 — Statistics */}
       <section className="relative bg-white py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             {stats.map((s, i) => (
               <Reveal key={s.label} delay={i * 100}>
                 <div className="rounded-2xl border border-[#082B5C]/8 bg-white p-8 text-center shadow-soft">
