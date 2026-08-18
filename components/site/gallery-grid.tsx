@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import type { GalleryItem } from '@/lib/site';
@@ -84,9 +85,12 @@ export default function GalleryGrid({ items, className }: { items: GalleryItem[]
       </div>
 
       {/* Lightbox */}
-      {lightbox !== null && filtered[lightbox] && (
+      {lightbox !== null && filtered[lightbox] && typeof document !== 'undefined' && createPortal(
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-[#082B5C]/95 p-4 backdrop-blur-sm animate-fade-in"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`Pratinjau ${filtered[lightbox].alt}`}
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-[#082B5C]/95 p-4 pb-20 backdrop-blur-sm animate-fade-in sm:p-16"
           onClick={() => setLightbox(null)}
         >
           <button
@@ -100,19 +104,22 @@ export default function GalleryGrid({ items, className }: { items: GalleryItem[]
           <button
             type="button"
             aria-label="Sebelumnya"
-            className="absolute left-4 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20"
+            className="absolute bottom-4 left-[calc(50%_-_3.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 sm:bottom-auto sm:left-4 sm:top-1/2 sm:-translate-y-1/2"
             onClick={(e) => { e.stopPropagation(); setLightbox((v) => v === null ? v : (v - 1 + filtered.length) % filtered.length); }}
           >
             <ChevronLeft className="h-6 w-6" />
           </button>
-          <figure className="max-h-[85vh] max-w-5xl" onClick={(e) => e.stopPropagation()}>
+          <figure
+            className="flex max-h-[calc(100dvh-6rem)] w-full max-w-5xl flex-col items-center"
+            onClick={(e) => e.stopPropagation()}
+          >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={filtered[lightbox].src}
               alt={filtered[lightbox].alt}
-              className="max-h-[78vh] w-auto rounded-xl object-contain"
+              className="h-auto max-h-[calc(100dvh-9rem)] max-w-full rounded-xl object-contain"
             />
-            <figcaption className="mt-3 text-center text-sm text-white/65">
+            <figcaption className="mt-3 max-w-full text-center text-sm text-white/65">
               <span className="font-semibold text-[#F5B51B]">{filtered[lightbox].category}</span>
               {' '}— {filtered[lightbox].alt}
             </figcaption>
@@ -120,12 +127,13 @@ export default function GalleryGrid({ items, className }: { items: GalleryItem[]
           <button
             type="button"
             aria-label="Berikutnya"
-            className="absolute right-4 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20"
+            className="absolute bottom-4 right-[calc(50%_-_3.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 sm:bottom-auto sm:right-4 sm:top-1/2 sm:-translate-y-1/2"
             onClick={(e) => { e.stopPropagation(); setLightbox((v) => v === null ? v : (v + 1) % filtered.length); }}
           >
             <ChevronRight className="h-6 w-6" />
           </button>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );

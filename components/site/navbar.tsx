@@ -130,10 +130,9 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div
         className={cn(
-          'fixed inset-x-0 bottom-0 top-[var(--nav-h,4rem)] z-40 overflow-y-auto bg-white transition-all duration-300 lg:hidden',
+          'absolute inset-x-0 top-full z-40 h-[calc(100dvh_-_100%)] overflow-y-auto overscroll-contain bg-white transition-all duration-300 lg:hidden',
           open ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'
         )}
-        style={{ ['--nav-h' as string]: '0px' }}
       >
         <div className="flex flex-col gap-1 px-4 pb-10 pt-6">
           {navItems.map((item, i) => {

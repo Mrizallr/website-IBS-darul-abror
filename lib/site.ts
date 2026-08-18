@@ -158,6 +158,8 @@ export const facilities: Facility[] = [
   {
     id: 'asrama-putri',
     name: 'Asrama Putri',
+    category: 'Asrama',
+    image: '/assets/images/AsramaAkhwat.webp',
     description:
       'Asrama santri putri dengan pengawasan penuh dan fasilitas yang memadai.',
     location: 'Blok timur kompleks',
